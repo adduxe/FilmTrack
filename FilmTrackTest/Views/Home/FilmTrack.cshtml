@@ -8,11 +8,14 @@
         @{
             ViewBag.Title = "FilmTrack";
         }
-
         
-        <label for="numOfBulbs">Number of bulbs:</label>
-        <input type="number" id="numOfBulbs" ng-model="numOfBulbs" ng-change="showBulbs()" min="1"/>
         <h2>FilmTrack</h2>
+
+        <label for="numOfBulbs">Number of bulbs:</label>
+        <input type="number" id="numOfBulbs" ng-model="numOfBulbs" ng-change="showBulbs()" min="0"/>
+        <br/>
+        <label for="numOfPeople">Number of People:</label>
+        <input type="number" id="numOfPeople" ng-model="numOfPeople" ng-change="showBulbs()" min="0">
 
         <table>
             <tr ng-repeat="isBulbOn in bulbs track by $index">
