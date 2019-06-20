@@ -18,8 +18,17 @@
         <input type="number" id="numOfPeople" ng-model="numOfPeople" ng-change="showBulbs()" min="0">
 
         <table>
+            <tr ng-show="numOfBulbs">
+                <td>ON:</td>
+                <td>{{ ON_count }}</td>
+            </tr>
+            <tr ng-show="numOfBulbs">
+                <td>OFF:</td>
+                <td>{{ OFF_count }}</td>
+            </tr>
             <tr ng-repeat="isBulbOn in bulbs track by $index">
-                <td ng-class="{ bulbON: isBulbOn, bulbOFF: !isBulbOn}">&#x1F4A1;</td>
+                <td>{{ $index + 1 }}</td>
+                <td ng-class="{ bulb_ON: isBulbOn, bulb_OFF: !isBulbOn}">&#x1F4A1;</td>
             </tr>
         </table>
 

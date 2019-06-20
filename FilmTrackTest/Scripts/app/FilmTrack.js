@@ -33,17 +33,17 @@
                     } // for (var j...)
                 } // for(var i...)
 
-                var on_count = 0, off_count = 0;
+                $scope.ON_count = $scope.OFF_count = 0;
 
                 for (var x = 0; x < $scope.numOfBulbs; ++x) {
                     if ($scope.bulbs[x]) {
-                        ++on_count;
+                        ++$scope.ON_count;
                     } else {
-                        ++off_count;
+                        ++$scope.OFF_count;
                     }
 
                 } // for (var x...)
-                console.log("on : " + on_count + "   off : " + off_count);
+//                console.log("on : " + on_count + "   off : " + off_count);
 
             }   // showBulbs()
         }   // function($scope)
