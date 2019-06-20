@@ -16,9 +16,12 @@
 
         <table>
             <tr ng-repeat="eachBulb in bulbs track by $index">
-                <td ng-show="eachBulb">On</td>
-                <td ng-show="!eachBulb">Off</td>
+                <td>&#x1F4A1;</td>
             </tr>
         </table>
+        <td ng-show="eachBulb" style="background-color:white; font-size:xx-large"></td>
+        <td ng-show="!eachBulb" style="background-color:black; font-size:xx-large">&#x1F4A1;</td>
+
+
     </div>
 </div>
