@@ -81,4 +81,3 @@ C:\Users\addux\Documents\GitHub\FilmTrackTest\FilmTrackTest\bin\Microsoft.AI.Web
 C:\Users\addux\Documents\GitHub\FilmTrackTest\FilmTrackTest\obj\Debug\FilmTrackTest.csproj.CoreCompileInputs.cache
 C:\Users\addux\Documents\GitHub\FilmTrackTest\FilmTrackTest\obj\Debug\FilmTrackTest.dll
 C:\Users\addux\Documents\GitHub\FilmTrackTest\FilmTrackTest\obj\Debug\FilmTrackTest.pdb
-C:\Users\addux\Documents\GitHub\FilmTrackTest\FilmTrackTest\obj\Debug\FilmTrackTest.csprojResolveAssemblyReference.cache
