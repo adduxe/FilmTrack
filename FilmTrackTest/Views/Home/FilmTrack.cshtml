@@ -1,0 +1,24 @@
+﻿@Scripts.Render("~/bundles/angularJS")
+@Scripts.Render("~/bundles/appJS")
+
+<div ng-app="FTModule">
+
+    <div ng-controller="FTController">
+
+        @{
+            ViewBag.Title = "FilmTrack";
+        }
+
+        {{ numOfBulbs }}
+        <label for="numOfBulbs">Number of bulbs:</label>
+        <input type="number" id="numOfBulbs" ng-model="numOfBulbs" ng-change="showBulbs()"/>
+        <h2>FilmTrack</h2>
+
+        <table>
+            <tr ng-repeat="eachBulb in bulbs track by $index">
+                <td ng-show="eachBulb">On</td>
+                <td ng-show="!eachBulb">Off</td>
+            </tr>
+        </table>
+    </div>
+</div>
