@@ -10,7 +10,7 @@ namespace FilmTrackTest.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return FilmTrack();
         }
 
         public ActionResult About()

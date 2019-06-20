@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FilmTrackTest",
+    "\\FilmTrackTest\\Content",
+    "\\FilmTrackTest\\Controllers",
+    "\\FilmTrackTest\\Views",
+    "\\FilmTrackTest\\Views\\Home"
   ],
+  "SelectedNode": "\\FilmTrackTest\\Views\\Home\\FilmTrack.cshtml",
   "PreviewInSolutionExplorer": false
 }

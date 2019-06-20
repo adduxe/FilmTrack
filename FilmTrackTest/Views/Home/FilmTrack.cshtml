@@ -9,19 +9,16 @@
             ViewBag.Title = "FilmTrack";
         }
 
-        {{ numOfBulbs }}
+        
         <label for="numOfBulbs">Number of bulbs:</label>
-        <input type="number" id="numOfBulbs" ng-model="numOfBulbs" ng-change="showBulbs()"/>
+        <input type="number" id="numOfBulbs" ng-model="numOfBulbs" ng-change="showBulbs()" min="1"/>
         <h2>FilmTrack</h2>
 
         <table>
-            <tr ng-repeat="eachBulb in bulbs track by $index">
-                <td>&#x1F4A1;</td>
+            <tr ng-repeat="isBulbOn in bulbs track by $index">
+                <td ng-class="{ bulbON: isBulbOn, bulbOFF: !isBulbOn}">&#x1F4A1;</td>
             </tr>
         </table>
-        <td ng-show="eachBulb" style="background-color:white; font-size:xx-large"></td>
-        <td ng-show="!eachBulb" style="background-color:black; font-size:xx-large">&#x1F4A1;</td>
-
 
     </div>
 </div>

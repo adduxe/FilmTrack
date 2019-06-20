@@ -7,7 +7,7 @@
         function ($scope) {
 
             const INITIAL_STATE = false;  // off
-            $scope.numOfBulbs = 10;
+//            $scope.numOfBulbs = 10;
 
 
             $scope.showBulbs = function () {
